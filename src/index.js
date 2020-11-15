@@ -8,6 +8,16 @@ import ApprovalCard from "./approvalCard";
 const App = () => {
   return (
     <div className="ui container comments">
+      {/* Component resusability */}
+      <ApprovalCard>
+        <h4>Warning!</h4>
+        <div>Are you sure ?</div>
+      </ApprovalCard>
+
+      {/* parent and child components
+      we can pass whole children component as a prop 
+      in parent it will consume by props.children */}
+
       <ApprovalCard>
         <CommentDetail
           author="arun"
